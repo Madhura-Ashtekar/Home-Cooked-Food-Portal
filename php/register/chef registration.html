@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<title>Chef registration page</title>
+<link rel="stylesheet" type="text/css" href="register.css">
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+<style>
+       body, html {
+                           bgcolor:"grey";
+                           height: 100%;
+                       }
+      body,h1,h2,h3,h4,h5,h6 {
+                                       font-family: "Amatic SC", sans-serif
+                                     }
+      .menu {
+                  display: none
+               }
+    
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+     <div class="w3-top w3-hide-small">
+     <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+     <a href="#" class="w3-bar-item w3-button">HOME</a>
+     <a href="#menu" class="w3-bar-item w3-button">ORDER FOOD</a>
+     <a href="#about" class="w3-bar-item w3-button">CHEF REGISTRATION</a>
+    <a href="#myMap" class="w3-bar-item w3-button">REGISTER/SIGN IN</a>
+    </div>
+</div>
+
+<div id="container">
+<form name="regi" action="register1.jsp" method="post">
+<h2>Chef Registration Form</h2>
+<body bgcolor="grey">
+
+<label style="font-family:'Amatic SC',sans-serif;" for="r1" id="fn">First Name :</label>
+<input type="text" name="fname" id="r1" required><br/>
+ 
+<label style="font-family:'Amatic SC',sans-serif;" for="r2" id="ln">Last Name :</label>
+<input type="text" name="lname" id="r2" required><br/>
+
+<label style="font-family:'Amatic SC',sans-serif;" for="r3" id="em">Email:</label>
+<input type="text" name="email" id="r3" placeholder="Ex. john-doe@net.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/><br/>
+
+<label style="font-family:'Amatic SC',sans-serif;" for="r4" id="pwd">Password    :</label>
+<input type="password" name="pass1" id="r4" placeholder="Ex.John@123" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(\W|_)).{5,}$" required><br/>
+
+<label style="font-family:'Amatic SC',sans-serif;" for="r5" id="cpwd"> Confirm it:</label>
+<input type="password" name="pass2" id="r5" required><br/>
+ 
+<label style="font-family:'Amatic SC',sans-serif;" for="r6" id="mn">Mobile No :</label>
+<input type="tel" name="mno" id="r6" size="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"  required><br/>
+
+<label style="font-family:'Amatic SC',sans-serif;" for="r7" id="add">Full Address :</label>
+<input type="text" name="add" id="r7" required><br/>
+
+<label style="font-family:'Amatic SC',sans-serif;" for="r8" id="mn">Menu details :</label>
+<input type="text" name="mno" id="r8" required><br/>
+ 
+<button type="submit" value="Submit" id="button">Register</button>
+<a href="add.html">Add dish</a>
+
+
+</div> 
+</form>
+ 
+<script type="text/javascript">
+function save()
+           {
+             var user = document.getElementById("user").value;
+             var pwd = document.getElementById("pwd").value;
+             alert("username"+user+"password"+pwd);
+           }
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<title>Login page</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+<style>
+       body, html { 
+                          height: 100%
+                      }
+       body,h1,h2,h3,h4,h5,h6 {
+                                          font-family: "Amatic SC", sans-serif
+                                       }
+      .menu { 
+                  display: none
+               }  
+       #container{
+                      height:50%;
+                      width:80%;
+                      margin-left:10%;
+                      margin-top:15%;
+                     }
+</style>
+<body>
+
+  <!-- Navbar (sit on top) -->
+     <div class="w3-top w3-hide-small">
+     <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+     <a href="#" class="w3-bar-item w3-button">HOME</a>
+     <a href="#menu" class="w3-bar-item w3-button">ORDER FOOD</a>
+     <a href="#about" class="w3-bar-item w3-button">CHEF REGISTRATION</a>
+     <a href="#myMap" class="w3-bar-item w3-button">REGISTER/SIGN IN</a>
+     </div>
+</div>
+
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div id="container">
+
+<form action="login" method="post" id="flogin" >
+ 
+<div class="border-box">
+<h2>Login Form</h2>
+<label for="uname" id="un">Email:</label>
+<input type="text" name="user" id="uname" placeholder="Ex. john-doe@net.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br/>
+ 
+<label for="upass" id="ps">Password:</label>
+<input type="password" name="pass" id="upass" placeholder="Ex.John@123" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(\W|_)).{5,}$"><br/>
+ 
+<button type="submit" value="Login"  id="submit" onClick="alert('Login Successfully')">Login</button>
+ 
+<a href="register.html">New Member</a>
+ </div>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../css/chef_cuisine.css">
+</head>
+<body>
+
+<div class="main">
+	<div class="menubar" id="menubar">
+		<div class="location">
+			<input id="location" placeholder="Location">  </input>
+		</div>
+		
+		<div id="filters" class="filters">
+		  <form action="/php/filter.php">
+		  <select name="cost" id="cost">
+			<option value="cost1">0-100</option>
+			<option value="cost2">100-500</option>
+			<option value="cost3">500-1000</option>
+			<option value="cost4">1000+</option>
+		  </select>
+		  
+		  <select name="cuisine" id="cuisine">
+			<option value="nind">North Indian</option>
+			<option value="sind">South Indian</option>
+			<option value="ita">Italian</option>
+			<option value="thai">Thai</option>
+		  </select>
+		  
+		  <select name="rating" id="cost">
+			<option value="rating1">1 star</option>
+			<option value="rating2">2 star</option>
+			<option value="rating3">3 star</option>
+			<option value="rating4">4 star</option>
+		  </select>
+		  
+		  <input type="submit" value="Submit">
+		</form>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="chef_info" id="chef_info">
+			<span> Name: </span>
+			<span> Address: </span>
+			<span> Cuisine: </span>
+			<span> Veg/NonVeg: </span>
+		</div>
+	
+	</div>
+	
+</div>
+
+</div>
+
+
+</body>
+</html>

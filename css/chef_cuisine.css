@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  margin-top: 20px	;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FF7B52;
+  color: white;
+}
+
+
+.main {
+	display: block;
+    padding: 0% 5% 5% 5%;
+}
+
+.menubar {
+	padding: 1px 0px 0px 0px;
+	background-color: #ddd;
+	color: black;
+	
+}
+
+.location, .search-bar {
+	padding:10px;
+}
+
+.filters {
+	padding:10px;
+	
+}
+
+.container > * {
+}
+
+.chef_row {
+	#display:none;
+	width: 100%;
+	background-color:#D3D3D3;
+	padding: 2% 0% 2% 0%;
+}
+
+.profile {
+	float:left;
+	display: inline;
+	width:10%;
+}
+
+.profile-pic {
+	padding: 0% 0% 0% 20%;
+}
+
+.chef-details {
+	display: inline;
+	width: 90%;
+}
+
+.chef-details > * {
+	display: grid;
+	
+}

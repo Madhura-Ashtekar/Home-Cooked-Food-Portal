@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<title>Add dish page</title>
+<link rel="stylesheet" type="text/css" href="register.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+<style>
+       body, html {
+                           bgcolor:"grey";
+                           height: 100%;
+                       }
+      body,h1,h2,h3,h4,h5,h6 {
+                                       font-family: "Amatic SC", sans-serif
+                                     }
+      .menu {
+                  display: none
+               }
+     #container{
+                      margin-top:5%
+                   }
+      
+</style>
+<body>
+<body bgcolor="grey">
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div id="container">
+
+<form action="add" method="post" id="add" >
+ 
+<div class="border-box">
+<h2>Add Dish</h2>
+<label for="r1" id="a">DISH 1:</label>
+<p>Select food type:</p>
+<input type="radio" name="select" value="veg" >VEG</br>
+<input type="radio" name="select" value="non-veg">NON-VEG</br></br>
+
+<label for="r2" id="a">Cuisine types:</label>
+
+<select name="a" id="r2" required>
+<option>Select</option>
+<option>Chinese</option>
+<option>Maharashtrian</option>
+<option>Italian</option>
+<option>South Indian</option>
+<option>Gujarati</option>
+<option>other</option>
+</select><br/>
+
+<label for="r3" id="name">Dish Name :</label>
+<input type="text" name="name" id="r3" required><br/>
+
+
+<label for="r1" id="a">DISH 2:</label>
+<p>Select food type:</p>
+<input type="radio" name="select" value="veg" >VEG</br>
+<input type="radio" name="select" value="non-veg">NON-VEG</br></br>
+
+<label  for="r2" id="a">Cuisine types:</label>
+
+<select name="a" id="r2" required>
+<option>Select</option>
+<option>Chinese</option>
+<option>Maharashtrian</option>
+<option>Italian</option>
+<option>South Indian</option>
+<option>Gujarati</option>
+<option>other</option>
+</select><br/>
+
+<label  for="r3" id="name">Dish Name :</label>
+<input type="text" name="name" id="r3" required><br/>
+
+<label for="r1" id="a">DISH 3:</label>
+<p>Select food type:</p>
+<input type="radio" name="select" value="veg" >VEG</br>
+<input type="radio" name="select" value="non-veg">NON-VEG</br></br>
+
+<label for="r2" id="a">Cuisine types:</label>
+<select name="a" id="r2" required>
+<option>Select</option>
+<option>Chinese</option>
+<option>Maharashtrian</option>
+<option>Italian</option>
+<option>South Indian</option>
+<option>Gujarati</option>
+<option>other</option>
+</select><br/>
+
+<label for="r3" id="name">Dish Name :</label>
+<input type="text" name="name" id="r3" required><br/>
+
+<button type="submit" value="Submit"  id="submit" onClick="alert('Submitted')">Submit</button>
+<button type="submit" value="add"  id="submit">Add more</button>
+
+
+ </div>
+</form>
+</div>
+</body>
+</html>
+
+
+
