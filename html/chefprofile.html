@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chef Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+p,body, html {height: 100%}
+p,body,h1,h2,h3,h4,h5,h6 {font-family: Arial,Helvetica,sans-serif;}
+hr{border-width:3px;}
+.menu {display: none}
+h1{background-color:#FF7B52;} 
+h3{color:#FF7B52;}
+ {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.checked {
+  color: orange;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FF7B52;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FF7B52;
+  color: white;
+}
+
+
+
+.tab
+{
+	overflow:hidden;
+	border:1px solid #ccc;
+	background-color:#f1f1f1;
+}
+
+.tab button
+{
+	background-color:inherit;
+	float:left;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	padding:14px 16px;
+	transition:0.3s;
+}
+
+.tab button.active
+{
+	background-color:#ccc;
+}
+
+.tabcontent
+{
+	display:none;
+	padding:6px 12px;
+	border:1px solid #ccc;
+	border-top:none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: #D3D3D3;
+}
+
+
+.page {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.menu-body {
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  color: rgb(92, 92, 92);
+}
+
+.menu-section {
+  margin-bottom: 0px;
+}
+
+.menu-section-title {
+  font-family: georgia;
+  font-size: 50px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0; 
+  text-align: Center;
+}
+
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+  color: #000000;
+  font-family: "Open Sans";
+ 
+}
+
+.menu-item-name{
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+.menu-item-description {
+  font-weight: normal;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+.menu-item-price{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -30px;
+}
+
+
+.add-to-cart{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+}
+
+</style>
+
+ <br><br>
+<center>
+
+<script type="text/javascript">
+
+function opentab(evt,cityName)
+{
+	var i,tabcontent,tablinks;
+	tabcontent=document.getElementsByClassName("tabcontent");
+	
+	for(i=0;i<tabcontent.length;i++)
+	{
+		tabcontent[i].style.display="none";
+	}
+
+	tablinks=document.getElementsByClassName("tablinks");
+	for(i=0;i<tablinks.length;i++)
+	{
+		tablinks[i].className=tablinks[i].className.replace("active","");
+	}
+
+
+document.getElementById(cityName).style.display="block";
+evt.currentTarget.className+="active";
+}
+
+</script>
+</head>
+</center>
+
+<body>
+
+<div class="topnav">
+  <a href="#home">Home</a>
+  <a class="active" href="#order">Order Food</a>
+  <a href="#chef">Chef Registration</a>
+  <a href="#register">Register/Sign In</a>
+</div>
+<br>
+<div class="card">
+<img src="chefphoto.jpeg" alt="chefphoto" height=250px width=250px>
+<h1>Chef abc</h1><br>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+<br>Shivajinagar,Pune,India
+</div>
+
+<div class="tab">
+<button class="tablinks" onclick="opentab(event,'Profile');">Profile</button>
+<button class="tablinks" onclick="opentab(event,'Menu');">Menu</button>
+<button class="tablinks" onclick="opentab(event,'Reviews');">Reviews</button>
+</div>
+<div id="Profile" class="tabcontent">
+<h3>Profile</h3>
+<p><b>About</b><hr> abc is a Home Chef from Pune,India. </p>
+<p><b>Specialities</b><hr></b> North Indian Food, Snacks, Sweets </p>
+<p><b>Food Type</b><hr> Veg, Non-Veg</p>
+
+</div>
+
+<div id="Menu" class="tabcontent">
+<h3>Menu</h3>
+<div class="page">
+<div class="menu-section">
+<div class="menu-item">
+<div class="menu-item-name">
+Samosa	
+</div>
+<div class="menu-item-price">
+Rs. 60
+</div>
+<button class="add-to-cart">Add to Cart</button>
+<div class="menu-item-description">
+Spicy hot Samosas
+</div>
+</div>
+<!-- Item ends -->
+<br><hr>
+		
+<!-- Item starts -->
+<div class="menu-item">
+<div class="menu-item-name">
+Veg Biryani				
+</div>
+<div class="menu-item-price">
+Rs. 100
+</div>
+<button class="add-to-cart">Add to Cart</button>
+<div class="menu-item-description">
+Decadent Veg Biryani
+</div>
+</div>
+<!-- Item ends -->
+<br><hr>
+      
+<!-- Item starts -->
+<div class="menu-item">
+<div class="menu-item-name">
+Pav Bhaji				
+</div>
+<div class="menu-item-price">
+Rs. 120
+</div>
+<button class="add-to-cart">Add to Cart</button>
+<div class="menu-item-description">
+Mouth watering Pav Bhaji
+</div>
+</div>
+<!-- Item ends -->
+<br><hr>
+</div>
+
+  
+</div> <!-- page -->
+</div>
+
+<div id="Reviews" class="tabcontent">
+<h3>Reviews</h3>
+<b>Leave a Rating</b>
+<br>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br><br><br>
+<b>Write a Review</b>
+<br>
+<textarea name="review" rows="5" cols="50"></textarea>
+<br><br>
+<input type="submit" value="Submit">
+
+</div>
+
+</body>
+</html>
